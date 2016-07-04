@@ -13,11 +13,11 @@ module.exports = class Gzip
         ext:  /\.html$/
       }
       {
-        path: @_joinToPublic @options.paths?.javascript or 'javascripts'
+        path: @config.paths.public
         ext:  /\.js$/
       }
       {
-        path: @_joinToPublic @options.paths?.stylesheet or 'stylesheets'
+        path: @config.paths.public
         ext:  /\.css$/
       }
     ]
